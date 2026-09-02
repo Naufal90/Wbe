@@ -1,0 +1,77 @@
+:root {
+  --color-bg: #0a0a0f;
+  --color-bg-elevated: #12121a;
+  --color-bg-card: rgba(18, 18, 26, 0.85);
+  --color-scarlet: #dc143c;
+  --color-crimson: #8b0000;
+  --color-magenta: #c71585;
+  --color-glow: #ff2d55;
+  --color-surface: rgba(18, 18, 26, 0.85);
+  --color-border: rgba(220, 20, 60, 0.25);
+  --color-border-bright: rgba(220, 20, 60, 0.5);
+  --color-text: #f5f5f5;
+  --color-text-muted: #9ca3af;
+  --color-text-dim: #6b7280;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-focus: #ff2d55;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 24px rgba(220, 20, 60, 0.3);
+  --shadow-glow-lg: 0 0 48px rgba(220, 20, 60, 0.4);
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  --container-max: 1280px;
+  --container-padding: 1rem;
+
+  --header-height: 72px;
+
+  --z-dropdown: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+  --z-tooltip: 400;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #fafafa;
+    --color-bg-elevated: #ffffff;
+    --color-bg-card: rgba(255, 255, 255, 0.9);
+    --color-text: #111827;
+    --color-text-muted: #6b7280;
+    --color-text-dim: #9ca3af;
+    --color-border: rgba(220, 20, 60, 0.2);
+    --color-surface: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+    --transition-slow: 0ms;
+  }
+}

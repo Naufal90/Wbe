@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Masuk ke akun Mama Scarlet kamu.">
+  <meta name="theme-color" content="#0a0a0f">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+    <meta name="referrer" content="no-referrer">
+  <title>Masuk - Mama Scarlet</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Mama Scarlet - Beranda">
+        <span class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2-6.4-4.8L5.6 21.2 8 14 2 9.2h7.6z"/></svg>
+        </span>
+        <span>Mama <span class="text-gradient">Scarlet</span></span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="/games" class="nav-link">Games</a>
+        <a href="/orders" class="nav-link">Pesanan</a>
+        <a href="/index.html#how-it-works" class="nav-link">Cara Top Up</a>
+        <a href="/index.html#faq" class="nav-link">FAQ</a>
+      </nav>
+      <div class="header-auth" data-header-auth></div>
+      <button class="mobile-menu-btn" aria-label="Buka menu navigasi" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero page-hero-compact">
+      <div class="page-hero-bg" aria-hidden="true">
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="container page-hero-content">
+        <h1 class="page-hero-title">Masuk</h1>
+        <p class="page-hero-subtitle">Selamat datang kembali di Mama Scarlet.</p>
+      </div>
+    </section>
+
+    <section class="section auth-section">
+      <div class="container auth-container">
+        <form class="card auth-card reveal visible" id="login-form" novalidate>
+          <div class="id-field-group">
+            <label class="label" for="login-email">Email</label>
+            <input type="email" id="login-email" class="input" placeholder="nama@email.com" autocomplete="email" required>
+            <p class="field-error" data-error-for="email" hidden></p>
+          </div>
+          <div class="id-field-group">
+            <label class="label" for="login-password">Kata Sandi</label>
+            <input type="password" id="login-password" class="input" placeholder="Masukkan kata sandi" autocomplete="current-password" required>
+            <p class="field-error" data-error-for="password" hidden></p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg w-full" data-login-submit>
+            Masuk
+          </button>
+          <p class="auth-alt-text">
+            Belum punya akun? <a href="/register" class="auth-alt-link">Daftar sekarang</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom footer-bottom-simple">
+        <p class="footer-copyright">&copy; 2026 Mama Scarlet. All rights reserved.</p>
+        <div class="footer-legal">
+          <span class="footer-copyright">Disclaimer: Not affiliated with Moonton or Garena.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/config.js"></script>
+  <script type="module" src="/js/login-page.js"></script>
+</body>
+</html>

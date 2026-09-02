@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" width="128" height="128">
+  <defs>
+    <linearGradient id="mlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <filter id="mlGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#mlGrad)" filter="url(#mlGlow)"/>
+  <path d="M64 24C41.7 24 24 41.7 24 64c0 22.3 17.7 40 40 40s40-17.7 40-40C104 41.7 86.3 24 64 24z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <path d="M64 32c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <g filter="url(#mlGlow)">
+    <path d="M40 56c0-8.8 7.2-16 16-16s16 7.2 16 16-7.2 16-16 16-16-7.2-16-16zm48 0c0-8.8 7.2-16 16-16s16 7.2 16 16-7.2 16-16 16-16-7.2-16-16z" fill="rgba(255,255,255,0.9)"/>
+    <ellipse cx="48" cy="56" rx="6" ry="8" fill="#1a1a2e"/>
+    <ellipse cx="96" cy="56" rx="6" ry="8" fill="#1a1a2e"/>
+    <path d="M40 84c0-6.6 5.4-12 12-12h24c6.6 0 12 5.4 12 12" fill="none" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <circle cx="64" cy="64" r="3" fill="rgba(255,255,255,0.3)"/>
+</svg>

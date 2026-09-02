@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Katalog game top-up Mama Scarlet. Mobile Legends, Free Fire, dan banyak lagi. Pilih game favoritmu dan mulai top-up sekarang.">
+  <meta name="theme-color" content="#0a0a0f">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+    <meta name="referrer" content="no-referrer">
+  <title>Game Catalog - Mama Scarlet</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Mama Scarlet - Beranda">
+        <span class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2-6.4-4.8L5.6 21.2 8 14 2 9.2h7.6z"/></svg>
+        </span>
+        <span>Mama <span class="text-gradient">Scarlet</span></span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="/games" class="nav-link active" aria-current="page">Games</a>
+        <a href="/orders" class="nav-link">Pesanan</a>
+        <a href="/index.html#how-it-works" class="nav-link">Cara Top Up</a>
+        <a href="/index.html#faq" class="nav-link">FAQ</a>
+      </nav>
+      <div class="header-auth" data-header-auth></div>
+      <button class="mobile-menu-btn" aria-label="Buka menu navigasi" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="page-hero-bg" aria-hidden="true">
+        <div class="hero-gradient"></div>
+        <div class="glow-orb glow-orb-1"></div>
+      </div>
+      <div class="container page-hero-content">
+        <h1 class="page-hero-title">Semua Game</h1>
+        <p class="page-hero-subtitle">Pilih dari daftar game yang tersedia dan mulai top-up sekarang</p>
+        <div class="catalog-search">
+          <span class="catalog-search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input type="search" id="game-search" class="input catalog-search-input" placeholder="Cari game..." aria-label="Cari game">
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog section">
+      <div class="container">
+        <div class="grid grid-3 gap-lg" data-games-grid></div>
+        <div class="empty-state" data-empty-state hidden>
+          <p class="empty-state-title">Game tidak ditemukan</p>
+          <p class="empty-state-desc">Coba kata kunci lain atau lihat semua game yang tersedia.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo" aria-label="Mama Scarlet - Beranda">
+            <span class="logo-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2-6.4-4.8L5.6 21.2 8 14 2 9.2h7.6z"/></svg>
+            </span>
+            <span>Mama <span class="text-gradient">Scarlet</span></span>
+          </a>
+          <p class="footer-desc">
+            Platform top-up game tercepat dan terpercaya di Indonesia.
+            Diamond Mobile Legends, Free Fire, dan banyak lagi — proses instan 24/7.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Discord">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 2L7 4.5c-2 .5-4 2-4 2S1 9.5 1 13c0 0 1.5 2.5 4.5 3.5l1 2h3l.5-1c.66.07 1.34.07 2 0l.5 1h3l1-2c3-1 4.5-3.5 4.5-3.5 0-3.5-2-6.5-2-6.5s-2-1.5-4-2L13.5 2h-5zM9.5 11a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </a>
+          </div>
+        </div>
+        <nav aria-label="Link layanan">
+          <h3 class="footer-title">Layanan</h3>
+          <div class="footer-links">
+            <a href="/games" class="footer-link">Semua Game</a>
+            <a href="/topup.html?game=mobile_legends" class="footer-link">Mobile Legends</a>
+            <a href="/topup.html?game=free_fire" class="footer-link">Free Fire</a>
+          </div>
+        </nav>
+        <nav aria-label="Link bantuan">
+          <h3 class="footer-title">Bantuan</h3>
+          <div class="footer-links">
+            <a href="/index.html#how-it-works" class="footer-link">Cara Top Up</a>
+            <a href="/orders" class="footer-link">Cek Pesanan</a>
+            <a href="/admin" class="footer-link">Admin</a>
+            <a href="/index.html#faq" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Hubungi Kami</a>
+          </div>
+        </nav>
+        <nav aria-label="Link legal">
+          <h3 class="footer-title">Legal</h3>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Syarat &amp; Ketentuan</a>
+            <a href="#" class="footer-link">Kebijakan Privasi</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Mama Scarlet. All rights reserved.</p>
+        <div class="footer-legal">
+          <span class="footer-copyright">Disclaimer: Not affiliated with Moonton or Garena.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="/config.js"></script>
+  <script type="module" src="/js/games-page.js"></script>
+</body>
+</html>

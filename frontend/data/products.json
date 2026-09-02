@@ -1,0 +1,18 @@
+{
+  "mobile_legends": [
+    { "id": "ml_86", "name": "86 Diamonds", "price": 20000, "originalPrice": 22000, "game": "mobile_legends", "popular": true, "description": "86 Diamond Mobile Legends" },
+    { "id": "ml_172", "name": "172 Diamonds", "price": 38000, "originalPrice": 42000, "game": "mobile_legends", "popular": true, "description": "172 Diamond Mobile Legends" },
+    { "id": "ml_257", "name": "257 Diamonds", "price": 55000, "originalPrice": 60000, "game": "mobile_legends", "popular": true, "description": "257 Diamond Mobile Legends" },
+    { "id": "ml_344", "name": "344 Diamonds", "price": 72000, "originalPrice": 78000, "game": "mobile_legends", "popular": false, "description": "344 Diamond Mobile Legends" },
+    { "id": "ml_429", "name": "429 Diamonds", "price": 89000, "originalPrice": 96000, "game": "mobile_legends", "popular": false, "description": "429 Diamond Mobile Legends" },
+    { "id": "ml_514", "name": "514 Diamonds", "price": 105000, "originalPrice": 112000, "game": "mobile_legends", "popular": false, "description": "514 Diamond Mobile Legends" },
+    { "id": "ml_weekly", "name": "Weekly Diamond Pass", "price": 45000, "originalPrice": 50000, "game": "mobile_legends", "popular": true, "description": "Weekly Diamond Pass MLBB" }
+  ],
+  "free_fire": [
+    { "id": "ff_100", "name": "100 Diamonds", "price": 15000, "originalPrice": 17000, "game": "free_fire", "popular": true, "description": "100 Diamond Free Fire" },
+    { "id": "ff_310", "name": "310 Diamonds", "price": 42000, "originalPrice": 46000, "game": "free_fire", "popular": true, "description": "310 Diamond Free Fire" },
+    { "id": "ff_520", "name": "520 Diamonds", "price": 68000, "originalPrice": 74000, "game": "free_fire", "popular": true, "description": "520 Diamond Free Fire" },
+    { "id": "ff_1060", "name": "1060 Diamonds", "price": 135000, "originalPrice": 145000, "game": "free_fire", "popular": false, "description": "1060 Diamond Free Fire" },
+    { "id": "ff_2180", "name": "2180 Diamonds", "price": 270000, "originalPrice": 290000, "game": "free_fire", "popular": false, "description": "2180 Diamond Free Fire" }
+  ]
+}

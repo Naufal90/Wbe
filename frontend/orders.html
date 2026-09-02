@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Riwayat pesanan top-up kamu di Mama Scarlet.">
+  <meta name="theme-color" content="#0a0a0f">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+    <meta name="referrer" content="no-referrer">
+  <title>Pesanan Saya - Mama Scarlet</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Mama Scarlet - Beranda">
+        <span class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2-6.4-4.8L5.6 21.2 8 14 2 9.2h7.6z"/></svg>
+        </span>
+        <span>Mama <span class="text-gradient">Scarlet</span></span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="/games" class="nav-link">Games</a>
+        <a href="/orders" class="nav-link active" aria-current="page">Pesanan</a>
+        <a href="/index.html#how-it-works" class="nav-link">Cara Top Up</a>
+        <a href="/index.html#faq" class="nav-link">FAQ</a>
+      </nav>
+      <div class="header-auth" data-header-auth></div>
+      <button class="mobile-menu-btn" aria-label="Buka menu navigasi" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero page-hero-compact">
+      <div class="page-hero-bg" aria-hidden="true">
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="container page-hero-content">
+        <h1 class="page-hero-title">Pesanan Saya</h1>
+        <p class="page-hero-subtitle">Riwayat top-up yang kamu buat di perangkat ini.</p>
+      </div>
+    </section>
+
+    <section class="section order-section">
+      <div class="container order-container">
+        <div class="order-list" data-orders-list></div>
+        <div class="empty-state" data-empty-state hidden>
+          <p class="empty-state-title">Belum ada pesanan</p>
+          <p class="empty-state-desc">Pesanan yang kamu buat akan tampil di sini.</p>
+          <a href="/games" class="btn btn-primary" style="margin-top: var(--spacing-md);">Mulai Top Up</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom footer-bottom-simple">
+        <p class="footer-copyright">&copy; 2026 Mama Scarlet. All rights reserved.</p>
+        <div class="footer-legal">
+          <span class="footer-copyright">Disclaimer: Not affiliated with Moonton or Garena.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/config.js"></script>
+  <script type="module" src="/js/orders-page.js"></script>
+</body>
+</html>

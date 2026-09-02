@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" width="128" height="128">
+  <defs>
+    <linearGradient id="ffGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc143c"/>
+      <stop offset="100%" style="stop-color:#8b0000"/>
+    </linearGradient>
+    <filter id="ffGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#ffGrad)" filter="url(#ffGlow)"/>
+  <path d="M64 24C41.7 24 24 41.7 24 64c0 22.3 17.7 40 40 40s40-17.7 40-40C104 41.7 86.3 24 64 24z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <g filter="url(#ffGlow)">
+    <path d="M64 38c-6.6 0-12 5.4-12 12v20c0 6.6 5.4 12 12 12s12-5.4 12-12V50c0-6.6-5.4-12-12-12zm0-6c10 0 18 8 18 18v20c0 10-8 18-18 18s-18-8-18-18V50c0-10 8-18 18-18z" fill="rgba(255,255,255,0.1)"/>
+    <path d="M38 56c0-11 9-20 20-20s20 9 20 20-9 20-20 20-20-9-20-20zm20-14c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z" fill="rgba(255,255,255,0.9)"/>
+    <path d="M64 56c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 2c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" fill="#1a1a2e"/>
+    <path d="M44 84c0-4.4 3.6-8 8-8h24c4.4 0 8 3.6 8 8" fill="none" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="44" cy="50" rx="8" ry="5" fill="rgba(255,255,255,0.15)"/>
+    <ellipse cx="84" cy="50" rx="8" ry="5" fill="rgba(255,255,255,0.15)"/>
+  </g>
+  <circle cx="64" cy="64" r="3" fill="rgba(255,255,255,0.3)"/>
+</svg>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil akun Mama Scarlet kamu.">
+  <meta name="theme-color" content="#0a0a0f">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+    <meta name="referrer" content="no-referrer">
+  <title>Profil - Mama Scarlet</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Mama Scarlet - Beranda">
+        <span class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2-6.4-4.8L5.6 21.2 8 14 2 9.2h7.6z"/></svg>
+        </span>
+        <span>Mama <span class="text-gradient">Scarlet</span></span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="/games" class="nav-link">Games</a>
+        <a href="/orders" class="nav-link">Pesanan</a>
+        <a href="/index.html#how-it-works" class="nav-link">Cara Top Up</a>
+        <a href="/index.html#faq" class="nav-link">FAQ</a>
+      </nav>
+      <div class="header-auth" data-header-auth></div>
+      <button class="mobile-menu-btn" aria-label="Buka menu navigasi" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero page-hero-compact">
+      <div class="page-hero-bg" aria-hidden="true">
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="container page-hero-content">
+        <h1 class="page-hero-title">Profil Saya</h1>
+        <p class="page-hero-subtitle">Kelola informasi akun kamu.</p>
+      </div>
+    </section>
+
+    <section class="section auth-section">
+      <div class="container auth-container">
+        <div class="card profile-card reveal visible">
+          <div class="profile-head">
+            <div class="profile-avatar-wrap">
+              <div class="profile-avatar" data-profile-initial data-profile-avatar>-</div>
+              <label class="avatar-edit-btn" for="avatar-input" title="Ganti foto profil" aria-label="Ganti foto profil">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                <input type="file" id="avatar-input" accept="image/*" data-avatar-input hidden>
+              </label>
+            </div>
+            <div class="profile-head-info">
+              <h2 class="profile-name" data-profile-name>Memuat...</h2>
+              <p class="profile-email" data-profile-email>-</p>
+              <p class="profile-meta">Bergabung <span data-profile-since>-</span></p>
+              <button type="button" class="btn btn-ghost btn-sm avatar-remove" data-action="remove-avatar" hidden>Hapus foto</button>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <form id="profile-form" data-profile-form>
+            <div class="id-field-group">
+              <label class="label" for="profile-name-input">Nama Tampilan</label>
+              <input type="text" id="profile-name-input" class="input" autocomplete="name" maxlength="40">
+              <p class="field-error" data-error-for="name" hidden></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+          </form>
+
+          <div class="divider"></div>
+
+          <div class="profile-links">
+            <a href="/orders" class="btn btn-secondary">
+              Pesanan Saya
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <button class="btn btn-secondary profile-logout" data-action="logout">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              Keluar
+            </button>
+          </div>
+        </div>
+
+        <div class="card profile-card wallet-card reveal visible" id="wallet">
+          <div class="wallet-head">
+            <h3 class="card-section-title">Dompet Lokal</h3>
+            <span class="badge badge-warning">Mode Test</span>
+          </div>
+          <p class="wallet-balance" data-wallet-balance>Rp0</p>
+          <p class="wallet-hint">Saldo lokal di perangkat ini, khusus untuk uji coba pembayaran.</p>
+          <button class="btn btn-primary btn-sm" data-action="open-topup">Isi Saldo</button>
+
+          <div class="divider"></div>
+
+          <h4 class="card-section-subtitle">Riwayat Transaksi</h4>
+          <ul class="wallet-tx-list" data-wallet-tx></ul>
+          <p class="wallet-empty" data-wallet-empty hidden>Belum ada transaksi.</p>
+        </div>
+
+        <form id="password-form" class="card profile-card password-card reveal visible" novalidate>
+          <h3 class="card-section-title">Ganti Kata Sandi</h3>
+          <div class="id-field-group">
+            <label class="label" for="password-current">Kata Sandi Saat Ini</label>
+            <input type="password" id="password-current" class="input" autocomplete="current-password" placeholder="Masukkan kata sandi saat ini">
+            <p class="field-error" data-error-for="current" hidden></p>
+          </div>
+          <div class="id-field-group">
+            <label class="label" for="password-new">Kata Sandi Baru</label>
+            <input type="password" id="password-new" class="input" autocomplete="new-password" placeholder="Minimal 8 karakter">
+            <p class="field-error" data-error-for="new" hidden></p>
+          </div>
+          <div class="id-field-group">
+            <label class="label" for="password-confirm">Konfirmasi Kata Sandi Baru</label>
+            <input type="password" id="password-confirm" class="input" autocomplete="new-password" placeholder="Ulangi kata sandi baru">
+            <p class="field-error" data-error-for="confirm" hidden></p>
+          </div>
+          <button type="submit" class="btn btn-primary" data-password-submit>Simpan Kata Sandi</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom footer-bottom-simple">
+        <p class="footer-copyright">&copy; 2026 Mama Scarlet. All rights reserved.</p>
+        <div class="footer-legal">
+          <span class="footer-copyright">Disclaimer: Not affiliated with Moonton or Garena.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/config.js"></script>
+  <script type="module" src="/js/profile-page.js"></script>
+</body>
+</html>
